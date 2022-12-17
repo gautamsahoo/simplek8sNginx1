@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: randompod
+  labels:
+    gname: standAlonePod
+spec:
+  containers:
+  - name: randpod1
+    image: busybox:1.28
+    ports:
+      - containerPort: 80

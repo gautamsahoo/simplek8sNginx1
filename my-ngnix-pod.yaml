@@ -6,7 +6,8 @@ metadata:
     labels:
       gname: StandAloneNgnixPod
 spec:
-  - name: ngnixapp1
-    image: nginx:1.14.2
-    ports:
-      - containerPort:4567
+  containers:
+    - name: ngnixapp1
+      image: nginx:1.14.2
+      ports:
+        - containerPort: 4567

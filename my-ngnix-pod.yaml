@@ -11,3 +11,7 @@ spec:
       image: nginx:1.14.2
       ports:
         - containerPort: 4567
+    - name: myredisapp1
+      image: redis:7.0
+      ports:
+        - containerPort: 8080
